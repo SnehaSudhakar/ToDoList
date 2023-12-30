@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* outerform */
+.outerBox {
+    width: 500px;
+    height: auto;
+    background: linear-gradient(50deg, rgb(39, 19, 154), rgb(170, 51, 162));
+}
+
+/* input parent div  */
+#inputBox {
+    border-bottom: 2px solid rgb(252, 252, 252);
+}
+
+.form-floating:hover label {
+    transform: translate(-5px, -10px);
+}
+
+.fa-plus {
+    color: rgb(39, 19, 154);
+}
+
+.form-check-input:checked {
+    background-color: rgb(39, 19, 154);
+}
+
+.fa-trash-can {
+    cursor: pointer;
+    color: rgb(170, 51, 162);
+}
+
+.dltTask {
+    float: right;
+}
