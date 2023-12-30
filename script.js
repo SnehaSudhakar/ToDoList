@@ -12,18 +12,13 @@ $(document).ready(() => {
 
         //newly entered task
         if (enteredTask != "") {
-            // var task = `<li class="d-flex justify-content-between  bg-white rounded text-dark p-2 my-3">
-            //         <div class="content overflow-hidden">
-            //             <input type="checkbox" class="form-check-input border border-secondary p-2" >
-            //             <label>${enteredTask}</label>
-            //         </div>
-            //         <span class="dltTask  mx-2"><i class="fa-solid fa-trash-can"></i></span >
-            //         </li>`;
-            var task = `<li class="list-unstyled bg-white rounded text-dark p-2 my-3">
-                            <input type="checkbox" class="form-check-input border border-secondary p-2" >
-                            <label>${enteredTask}</label>
+            var task = `<li class="d-flex justify-content-between list-unstyled bg-white rounded text-dark p-2 my-3">
+                            <div class="content overflow-hidden">
+                                <input type="checkbox" class="form-check-input border border-secondary p-2" >
+                                <label>${enteredTask}</label>
+                            </div>
                             <span class="dltTask  mx-2"><i class="fa-solid fa-trash-can"></i></span >
-                        </li>`;
+                         </li>`;
 
             $(".taskList").append(task); //append entered task to the list
             $("#newTask").val("");   //clearing input field
